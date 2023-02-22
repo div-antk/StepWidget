@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+// WeekDayWorrier
+// 何曜日からスタートするか設定
+
+let pedometor = CMPedometer()
+
 struct ContentView: View {
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

@@ -11,6 +11,7 @@
 		3B7542D829A4BDA500828F84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7542D729A4BDA500828F84 /* ContentView.swift */; };
 		3B7542DA29A4BDA600828F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7542D929A4BDA600828F84 /* Assets.xcassets */; };
 		3B7542DD29A4BDA600828F84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7542DC29A4BDA600828F84 /* Preview Assets.xcassets */; };
+		3BC6996229A63807009EE763 /* MyPedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC6996129A63807009EE763 /* MyPedometer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B7542D729A4BDA500828F84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B7542D929A4BDA600828F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7542DC29A4BDA600828F84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BC6996129A63807009EE763 /* MyPedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPedometer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3B7542D529A4BDA500828F84 /* StepWidgetApp.swift */,
 				3B7542D729A4BDA500828F84 /* ContentView.swift */,
+				3BC6996129A63807009EE763 /* MyPedometer.swift */,
 				3B7542D929A4BDA600828F84 /* Assets.xcassets */,
 				3B7542DB29A4BDA600828F84 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC6996229A63807009EE763 /* MyPedometer.swift in Sources */,
 				3B7542D829A4BDA500828F84 /* ContentView.swift in Sources */,
 				3B7542D629A4BDA500828F84 /* StepWidgetApp.swift in Sources */,
 			);
