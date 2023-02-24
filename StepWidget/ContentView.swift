@@ -6,22 +6,37 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 // WeekDayWorrier
 // 何曜日からスタートするか設定
 
-let pedometor = CMPedometer()
-
 struct ContentView: View {
+    
+    @ObservableObject var pedometer = MyPedometer()
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if self.pedometer.isWalking {
+                Text("歩いている")
+            } else {
+                Text("止まっている")
+            }
+            Text("\(self.pedometer.count)")
+            Button(action: {
+                if !self.pedometer.isStarted {
+                    self.pedometer.start()
+                } else {
+//                    self.pedometer.stop()
+                }
+            }) {
+                if !self.pedometer.isStarted {
+                    Text("スタート")
+                } else {
+                    Text("ストップ")
+                }
+            }
         }
-        .padding()
     }
 }
 
