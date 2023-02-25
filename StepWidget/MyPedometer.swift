@@ -23,7 +23,7 @@ class MyPedometer: NSObject, ObservableObject {
         
         isStarted = true
         
-        pedometer.stopEventUpdates { (event, error) in
+        pedometer.startEventUpdates { (event, error) in
             guard error == nil else {
                 print("error: \(String(describing: error))")
                 return
@@ -35,6 +35,16 @@ class MyPedometer: NSObject, ObservableObject {
                 } else {
                     self.isWalking = true
                 }
+            }
+        }
+        
+        pedometer.startUpdates(from: Date()) { (data, error) in
+            guard error == nil else {
+                print("error: \(String(describing: error))")
+                return
+            }
+            DispatchQueue.main.async {
+                self.count = data?.numberOfSteps as! Int
             }
         }
     }
