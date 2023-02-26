@@ -48,5 +48,16 @@ class MyPedometer: NSObject, ObservableObject {
             }
         }
     }
+    
+    func stop() {
+        guard isStarted else {
+            return
+        }
+        
+        isStarted = false
+        
+        pedometer.stopUpdates()
+        pedometer.stopEventUpdates()
+    }
 }
 
