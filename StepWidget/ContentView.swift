@@ -13,7 +13,7 @@ import CoreMotion
 
 struct ContentView: View {
     
-    @ObservableObject var pedometer = MyPedometer()
+    @ObservedObject var pedometer = MyPedometer()
     
     var body: some View {
         VStack {
@@ -27,7 +27,7 @@ struct ContentView: View {
                 if !self.pedometer.isStarted {
                     self.pedometer.start()
                 } else {
-//                    self.pedometer.stop()
+                    self.pedometer.stop()
                 }
             }) {
                 if !self.pedometer.isStarted {
