@@ -22,6 +22,7 @@
 		3B7542D929A4BDA600828F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7542DC29A4BDA600828F84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BC6996129A63807009EE763 /* MyPedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPedometer.swift; sourceTree = "<group>"; };
+		3BE228EB29AF71960046D9F1 /* StepWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		3B7542D429A4BDA500828F84 /* StepWidget */ = {
 			isa = PBXGroup;
 			children = (
+				3BE228EB29AF71960046D9F1 /* StepWidget.entitlements */,
 				3B67121F29AE08C800DA81E5 /* Info.plist */,
 				3B7542D529A4BDA500828F84 /* StepWidgetApp.swift */,
 				3B7542D729A4BDA500828F84 /* ContentView.swift */,
@@ -270,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepWidget/StepWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepWidget/Preview Content\"";
@@ -301,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepWidget/StepWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepWidget/Preview Content\"";
